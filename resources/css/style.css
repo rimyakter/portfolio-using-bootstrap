@@ -1,0 +1,724 @@
+/*===========================================================================
+        CSS INDEX
+       ============
+
+        1.COMMON CSS
+        2.HERO
+        3.SERVICE
+        4.TUTORIAL
+        5.WORK
+        6.Team
+        7.ABOUT
+        8.FEATURE
+        9.SERVICE-ITEM
+        10.GALLARY
+
+
+=================================================================================*/
+/*================================================================================
+    1.COMMON CSS
+===============================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+section{
+    padding: 80px 0;
+}
+h1, h2, h3, h4, h5{
+    font-weight: 700;
+}
+h2{
+    font-size: 390%;
+}
+h3{
+    font-size: 300%;
+}
+h4{
+    font-size: 280%;
+}
+h5{
+    font-size: 160%;
+}
+h6{
+    font-size: 110%;
+}
+/*================================================================================
+    2.HERO
+===============================================================================*/
+#hero{
+    background: url(img/header.png) no-repeat center / cover;
+    height: 90vh;
+}
+.mobile-app-banner-content{
+    color: #eeeeee;
+}
+.mobile-app-banner-content h1{
+    font-size: 530%;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.mobile-app-banner-content p{
+    font-size: 140%;
+}
+.btn-pink{
+    background: #fb527a;
+    color: #eeeeee;
+    text-transform: capitalize;
+    width: 150px;
+    transition: .5s;
+}
+/*================================================================================
+    3.SERVICE
+===============================================================================*/
+#service{
+    background: #f7f3f7;
+}
+#service h3{
+    color: #393636;
+}
+#service h5{
+    color: #4a4c4c;
+}
+#service .service-icon img{
+    height: 50px;
+}
+.service-content{
+    border: 1px solid rgba(74, 76, 76, 0.2);
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+    
+}
+.service-content:hover{
+    border-top: 6px solid #fb527a;
+    padding-top: 45px;
+}
+/*================================================================================
+    4.TUTORIAL
+===============================================================================*/
+.video h3{
+    color: #393636;
+}
+.video h4{
+    color: rgba(57, 54, 54, 0.93);
+}
+.overlay-image{
+    position: relative;
+}
+.img-thumbnail{
+    width: 100%;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+iframe{
+    border: 2px solid rgba(16, 15, 15, 0.7);
+}
+.overlay iframe{
+    margin: 0 auto;
+}
+.overlay-image .overlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mfp-close-btn-in .mfp-close{
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 1%;
+    right: 3%;
+}
+/*================================================================================
+    5.WORK
+===============================================================================*/
+#work{
+    background: #f7f3f7;
+    
+}
+.work-content{
+    background: #fff;
+    padding: 60px 30px;
+    text-align: center;
+}
+.work-content,
+.work-content h2,
+.work-content span,
+.work-content h2::after,
+.work-content a{
+    transition: all .5s ease;
+}
+.work-content:hover{
+    background-color: #ff517b;
+    text-emphasis-color: #f7f3f7;;
+}
+.work-content:hover h2,
+.work-content:hover span,
+.work-content:hover a{
+    color: #f7f3f7;
+}
+.work-content:hover h2::after{
+    background: #f7f3f7;
+}
+.work-content h2{
+    font-size: 210%;
+    color: #4a4c4c;
+    margin-top: 10px;
+}
+.work-content h2::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 20%;
+    background: #ff517b;
+    margin: 10px auto;
+}
+.work-content span{
+    display: block;
+    font-size: 140%;
+    color: #242725;
+    margin-top: 30px;
+}
+
+.work-content a{
+    font-size: 350%;
+    color: #313431;
+}
+/*================================================================================
+    6.Team
+===============================================================================*/
+#team-left .team-heading h2{
+    font-size: 300%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+#team-left .team-heading h2 span{
+    color: #fb527a;
+    text-transform: uppercase;
+}
+#team-left .team-heading p{
+    font-size: 140%;
+    margin-bottom: 50px;
+}
+.team-social-icons a{
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    font-size: 200%;
+    color: #fb527a;
+    line-height: 2.2;
+    background-color: transparent;
+    border-radius: 3px;
+    text-align: center;
+    margin: 1.5px;
+    border: 2px solid #efefef;
+    transition: all .5s linear;
+}
+.team-social-icons a:hover{
+    background: #fb527a;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 7px;
+    
+}
+#team-right{
+    position: relative;
+}
+.team-members{
+    position: relative;
+    text-align: center;
+    margin: 5px;
+}
+.team-member-overlay{
+    background: rgba(33, 34, 38, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .5s linear;
+}
+.member-info{
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+}
+.member-info h4{
+    color: #fb527a;
+    font-size: 160%;
+    text-transform: uppercase;
+    
+}
+.member-info p{
+    color: #fff;
+    font-size: 120%;
+}
+.team-members:hover .team-member-overlay{
+    opacity: 1;
+}
+ul.social-list{
+    padding: 0;
+    margin-top: 20px;
+}
+ul.social-list li{
+    padding: 5px;
+    display: inline-block;
+}
+ul.social-list li a{
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    transition: all .5s linear;
+}
+ul.social-list li:nth-child(1) a:hover{
+    background: #3b5998;
+    border-color: transparent;
+}
+ul.social-list li:nth-child(2) a:hover{
+    background: #00aced;
+    border-color: transparent;
+}
+ul.social-list li:nth-child(3) a:hover{
+    background: #dd4b39;
+    border-color: transparent;
+}
+.owl-theme .owl-nav.disabled + .owl-dots{
+    background: #fb527a;
+    width: 30%;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 1px;
+}
+.owl-theme .owl-dots .owl-dot{
+    border: 1px solid #fff;
+    background: transparent;
+    margin: 10px;
+}
+.owl-theme .owl-dots .owl-dot span{
+    background: transparent;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background: #fff;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
+    background: #fff;
+}
+
+/* skill bar */
+#progress-element{
+    margin-top: 50px;
+}
+.skill{
+    margin-bottom: 40px;
+}
+.skill h4{
+    line-height: 2.5;
+    margin: 0;
+    font-size: 200%;
+    font-weight: normal;
+}
+.progress{
+    height: 25px;
+    border: 0;
+    background: #efefef;
+    overflow: visible;
+    position: relative;
+}
+.progress-bar{
+    background: #fb527a;
+    position: relative;
+    overflow: visible;
+}
+.progress-bar span{
+    display: block;
+    position: absolute;
+    top: -140%;
+    left: 97%;
+    font-size: 110%;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    background: #212226;
+    padding-left: 5px;
+    padding-right: 3px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    z-index: 9999;
+    color: #fff;
+    border-radius: 2px;
+    
+}
+.progress-bar span::before{
+    content: '';
+    border-top: 8px solid #212226;
+    border-left: 10px solid transparent;
+    border-right: 9px solid transparent;
+    position: absolute;
+    top: 90%;
+    
+    
+}
+/*================================================================================
+    7.ABOUT
+===============================================================================*/
+#about{
+    background: url(img/about-bg.jpg) no-repeat center / cover;
+    color: #efefef;
+}
+#about .icon a{
+    display: inline-block;
+    margin-top: 80px;
+    font-size: 600%;
+    color: #efefef;
+    transition: .5s;
+}
+#about .icon a:hover{
+    color: #fb527a;
+}
+#about .description p{
+    font-size: 150%;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+#about .description h3{
+    font-size: 220%;
+    margin-top: 15px;
+}
+#about .description span{
+    display: block;
+    color: #ff517b;
+    margin-bottom: 80px;
+}
+/*================================================================================
+    8.FEATURE
+===============================================================================*/
+#feature{
+    background: #fff;
+}
+#feature .feature-heading{
+    margin-bottom: 55px;
+}
+#feature .feature-heading h4{
+    font-size: 190%;
+    color: #101010;
+    text-transform: uppercase;
+}
+#feature .feature-heading p{
+    font-size: 140%;
+}
+#feature .content h3{
+    font-size: 140%;
+    color: #101010;
+    margin: 0;
+    text-transform: uppercase;
+}
+#feature .content span{
+    font-size: 140%;
+    display: block;
+    margin-bottom: 15px;
+}
+#feature .content p{
+    font-size: 120%;
+    color: #101010;
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+.feature-img .right{
+    margin-left: -40px;
+}
+.feature-box{
+    display: flex;
+}
+.feature-box .content{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.feature-box .icon i{
+    font-size: 250%;
+    color: #232623;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    line-height: 2.5;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #efefef;
+    transition: all .5s linear;
+}
+.feature-box .icon i:hover{
+    background: #ff517b;
+    color: #fff;
+    cursor: pointer;
+}
+/*================================================================================
+    9.SERVICE-ITEM
+===============================================================================*/
+#service-item{
+    background: #f7f3f7;
+}
+#service-item ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#service-item ul li a{
+    text-decoration: none;
+    font-size: 160%;
+    color: #4f4f4f;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: .5s;
+    padding: 10px;
+    margin: 0 15px;
+    
+}
+#service-item ul li a:hover{
+    border-color: #fb527a;
+    color: #000;
+}
+#service-item ul li.r-tabs-state-active a{
+    color: #fb527a;
+    border-bottom: 3px solid #fb527a;
+    padding-bottom: 10px;
+}
+.r-tabs .r-tabs-panel.r-tabs-state-active{
+    border-bottom: none;
+}
+#service-item .img-fluid{
+    width: 90%;
+    height: 60vh;
+}
+.service-item-content .service-item-description h3{
+    color: #4f4f4f;
+    font-size: 310%;
+    margin-bottom: 30px;
+}
+.service-item-content .service-item-description p{
+    font-size: 130%;
+    color: #4f4f4f;
+}
+.service-item-content .service-item-btn .btn-service-item{
+    background: #fb527a;
+    color: #fff;
+    font-size: 13px;
+    padding: 12px 35px;
+    border-radius: 30px;
+    margin-top: 35px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+.service-item-content .service-item-btn .btn-service-item:hover{
+    background: transparent;
+    border: 2px solid #fb527a;
+    color: #fb527a;
+}
+#service-item-tab-1{
+    background: #fff;
+}
+#service-item-tab-2{
+    background: #FCE2DB;
+}
+#service-item-tab-3{
+    background: #E8F9FD;
+}
+#service-item-tab-4{
+    background: #FFFFAf;
+}
+/*================================================================================
+    10.GALLARY
+===============================================================================*/
+#gallary .filter-container{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 60px;
+}
+#gallary .filter-container .filter{
+    display: block;
+    padding: 15px 5px;
+}
+#gallary .filter-container .filter span{
+    display: inline-block;
+    font-size: 130%;
+    margin: 0 5px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: capitalize;
+    background: #fff;
+    color: #314a5d;
+    transition: .5s linear;
+    border: 2px solid #f7f7f7;
+}
+#gallary .filter-container .filter span:hover{
+    background: #ff517b;
+    border: 2px solid #ff517b;
+    color: #fff;
+}
+.gallery .items .item-img{
+    position: relative;
+}
+.gallery .items .item-img img{
+    width: 100%;
+}
+.item-img:hover .item-img-overly{
+    overflow: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+.item-img-overly{
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .5s linear;
+    border: 3px solid #314a5d;
+}
+.item-img-overly .overlay-info{
+    color: #314a5d;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+#gallary .full-width{
+    width: 100%;
+}
+.item-img-overly .overlay-info p{
+    font-size: 250%;
+    margin: 0;
+}
+.item-img-overly .overlay-info h6{
+    font-size: 150%;
+    margin-top: 5px;
+}
+.item-img-overly .overlay-info .icon i{
+    position: absolute;
+    top: 70%;
+    right: 15%;
+    border: 2px solid #314a5d;
+    font-size: 250%;
+    color: #314a5d;
+    padding: 8px 10px;
+    border-radius: 50%;
+    transition: .5s linear;
+}
+.item-img-overly .overlay-info .icon:hover i{
+    color: #fff;
+    background: #314a5d;
+    border: 2px solid #fff;
+}
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close{
+    width: 20px;
+    height: 30px;
+    color: #fff;
+    background: transparent;
+    top: 5%;
+    left: 120%;
+    cursor: pointer;
+    font-size: 380%;
+}
+img.mfp-img{
+    width: 100%;
+    height: 500px;
+}
+#gallary .filter-container .filter span.mixitup-control-active{
+    background: #ff517b;
+    border: 2px solid #ff517b;
+    color: #fff;
+    transition: .5s linear;
+}
+/*================================================================================
+    11.TESTIMONIAL
+===============================================================================*/
+#testimonial{
+    background: linear-gradient(#ff527a, #ffc371, #ff527a);
+   
+}
+#testimonial .testimonial-slider{
+    text-align: center;
+    background: #ffffff;
+    padding: 5px 80px;
+    margin: 0px 15px;
+    margin-top: 60px;
+    padding-bottom: 15px;
+}
+#testimonial .testimonial-slider .pic img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    margin: -80px 0;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5);
+}
+#testimonial .testimonial-slider .testimonial-description {
+    margin-top: 65px;
+}
+#testimonial .testimonial-slider .testimonial-description p{
+    font-size: 140%;
+    font-style: italic;
+    color: #4f4f4f;
+    font-weight: 300;
+}
+#testimonial .testimonial-slider .testimonial-description h3{
+    text-transform: uppercase;
+    font-size: 160%;
+    color: #212226;
+    margin-top: 30px;
+}
+#testimonial .testimonial-description h3::after{
+    content: '';
+    background: rgba(33, 34, 38, 0.5);
+    height: 3px;
+    width: 5%;
+    margin: 10px auto;
+    display: block;
+}
+#testimonial .testimonial-slider .testimonial-description span{
+    text-transform: capitalize;
+    color: #4f4f4f;
+    font-size: 130%;
+    font-weight: 500;
+}
+#testimonial .testimonial-slider .testimonial-ratings{
+   margin-top: 35px;
+   margin-bottom: 60px;
+}
+#testimonial .testimonial-slider .testimonial-ratings span{
+    color: #fb527a;
+    font-size: 200%;
+    margin-top: 0;
+}
